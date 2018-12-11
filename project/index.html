@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo khung ảnh với HTML & CSS</title>
+</head>
+<style>
+    .clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+#wrapper{width: 1200px; margin: 0 auto;}
+#list-post li{float: left; margin-right: 15px; margin-bottom: 20px; list-style: none;}
+#list-post li:nth-child(3n){margin-right: 0;}
+
+.thumb{overflow: hidden; display: inline-block;}
+#list-post .thumb{
+  width: 350px; 
+  position: relative;
+}
+.thumb img{
+  width: 100%; 
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*Cho ảnh vào chính giữa*/
+  transform: translate(-50%, -50%);
+}
+
+.thumb:before {
+    display: block;
+  /*Tăng chỉnh cho phù hợp với chiều cao ảnh*/  
+  padding-top: 140%;
+    content: '';
+}
+</style>
+<body>
+    <div id="wrapper">
+        <ul id="list-post" class="clearfix">
+          <li><a href="" class="thumb">
+          <img class="popupImage" src="https://c1.staticflickr.com/1/953/27275063937_72c5083d6e_o.jpg" alt="">
+        </a></li>
+          <li><a href="" class="thumb">
+          <img src="https://c1.staticflickr.com/1/953/27275063937_72c5083d6e_o.jpg" alt="">
+        </a></li>
+          <li><a href="" class="thumb">
+          <img src="https://c1.staticflickr.com/1/953/27275063937_72c5083d6e_o.jpg" alt="">
+        </a></li>
+          <li><a href="" class="thumb">
+          <img src="https://c1.staticflickr.com/1/953/27275063937_72c5083d6e_o.jpg" alt="">
+        </a></li>
+          <li><a href="" class="thumb">
+          <img src="https://c1.staticflickr.com/1/953/27275063937_72c5083d6e_o.jpg" alt="">
+        </a></li>
+          <li><a href="" class="thumb">
+          <img src="https://c1.staticflickr.com/1/953/27275063937_72c5083d6e_o.jpg" alt="">
+        </a></li>
+        </ul>
+      </div>
+</body>
+</html>
