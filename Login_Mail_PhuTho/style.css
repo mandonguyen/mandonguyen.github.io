@@ -105,7 +105,7 @@ input:focus {
     font-weight: bold;
     color: #0776c6;
     padding: 0 37px;
-    text-indent: -49px;
+    text-indent: -100px;
 }
 
 #login .input-control.submit img {
