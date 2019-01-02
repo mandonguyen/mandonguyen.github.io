@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 Theme Name: Login Email Phú Thọ
 Author: Mando Nguyễn
 Date: 18/12/2018
@@ -104,8 +104,8 @@ input:focus {
     font-size: 18px;
     font-weight: bold;
     color: #0776c6;
-    padding: 0 33px;
-    text-indent: -79px;
+    padding: 0 37px;
+    text-indent: -49px;
 }
 
 #login .input-control.submit img {
@@ -163,8 +163,9 @@ input:focus {
     }
     #login .input-control.submit img {
         position: relative;
-        top: 30px;
-        left: -71px;
+        top: 22px;
+        left: 0;
+        float: left;
     }
 
     .info {
@@ -172,7 +173,7 @@ input:focus {
     }
 
     #login .input-control.submit input {
-        text-indent: 0;
+        text-indent: -75px;
     }
 
 }
