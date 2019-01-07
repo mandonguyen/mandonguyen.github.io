@@ -1,0 +1,105 @@
+@import "res.css";
+@import "iconfonts.css";
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    background-color: #fff;
+}
+
+/* TOP BAR 
+-------------------------------------*/
+#hcjt--top-bar {
+    font-size: 12px;
+    background-color: #e7e7e7;
+    padding: 8px 0;
+}
+
+/* Top left */
+
+/* Top right */
+.hcjt--top-bar-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-socials, .top-hotline {
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+.top-socials .icons a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.top-socials .icons a:hover {
+    color: #c70003;
+}
+
+.top-hotline .phone-number {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c70003;
+}
+
+/* HEADER 
+-------------------------------------*/
+header#hcjt--header {
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* NAVIGATION
+-------------------------------------------*/
+#hcjt--navigation{
+    background: url("../images/nav-bg.png") repeat-x center;
+
+}
+#main-menu {
+    float: left;
+}
+#header-search {
+    float: right;
+}
+#main-menu > ul >li{
+    float: left;
+    position: relative;
+}
+
+#main-menu > ul >li > a{
+    display: inline-block; 
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+
+}
+
+#header-search form {
+    display: none;
+}
+
+#header-search .hcj-icon-search {
+    
+}
+
+#main-menu .hcj-icon-home {
+    font-size: 14px;
+}
+
+
