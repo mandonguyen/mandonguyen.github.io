@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu văn bằng</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-9">
+                    <h2>Trường đại học luật Hà Nội</h2>
+                    <h4>Hệ thống tra cứu văn bằng ...</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id = "navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav id="main-nav">
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đơn vị trực thuộc</a></li>
+                            <li><a href="#">Văn bản</a></li>
+                            <li><a href="#"> Tạp trí</a></li>
+                            <li><a href="#">Đào tạo</a></li>
+                        </ul> 
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id = "main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <form id = "form-search">
+                        <h3 class="text-center mb-5">Tra cứu văn bằng</h3>
+                        <div class="form-group">
+                            <label for="staticEmail" class=" col-form-label">Hệ đào tạo</label>
+                            
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Chính quy</option>
+                                    <option>Tại chức</option>
+                                    <option>Văn bằng 2</option>
+                                    <option>Cao học</option>
+                                    <option>Nghiên cứu sinh</option>
+                                  </select>
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="stu_code" class="col-form-label">Mã sinh viên</label>
+                            
+                              <input type="text" class="form-control" id="stu_code" placeholder="20CC0101">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="stu_name" class="col-form-label">Tên sinh viên</label>
+                            
+                              <input type="text"  class="form-control" id="stu_name" placeholder="Nguyễn Cao Bắc">
+                            
+                          </div>
+                        <div class="form-group">
+                          <label for="stu_birth_day_str" class="col-form-label">Ngày tháng năm sinh</label>
+                          
+                            <input type="text" data-date-format="mm/dd/yy" class="form-control" id="stu_birth_day_str" placeholder="03/03/1982">
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="stu_birth_place" class="col-form-label">Nơi sinh</label>
+                            
+                              <input type="text"  class="form-control" id="stu_birth_place" placeholder="Thái Bình">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="stu_num_note" class="col-form-label">Số vào sổ</label>
+                            
+                              <input type="text"  class="form-control" id="stu_num_note" placeholder="001-CC01-2020">
+                            
+                          </div>
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Tra cứu</button>
+                          </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <p class="text-center">
+                CopyRight© 2020 - Trung tâm CNTT Trường Đại học Luật Hà Nội
+            </p>
+        </div>
+    </footer>
+ <script src="js/jquery.min.js"></script>   
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
